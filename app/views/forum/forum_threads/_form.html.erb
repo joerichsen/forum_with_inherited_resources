@@ -1,0 +1,12 @@
+<%= simple_form_for([:forum, @forum_thread]) do |f| %>
+
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :subject %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
